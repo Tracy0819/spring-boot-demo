@@ -1,0 +1,22 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+info:
+  app-name: spring-boot-demo
+spring:
+  profiles: dev
+---
+spring:
+  profiles: dev
+
+---
+spring:
+     profiles: prod
+server:
+  tomcat:
+    max-connections: 2222
